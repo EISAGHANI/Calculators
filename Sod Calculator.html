@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sod Calculator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Sod Calculator</h1>
+		<form id="sod-form">
+			<!-- <label for="length">Length (ft)</label>
+			<input type="number" id="length" required>
+			<label for="width">Width (ft)</label>
+			<input type="number" id="width" required> -->
+
+			<tr>
+				<td>Length</td>
+				<td><input type="text" id="length" /></td>
+				<td>
+				  <select id="length-type">
+					<option value="meters">Metres</option>
+					<option value="centimeter">Centimeter</option>
+					<option value="inches">Inches</option>
+					<option value="feet">Feet</option>
+					<option value="yards">Yards</option>
+		  
+				  </select>
+				</td>
+			  </tr>
+<br> 
+
+			<tr>
+				<td>Width</td>
+				<td><input type="text" id="width" /></td>
+				<td>
+				  <select id="width-type">
+					<option value="meters">Metres</option>
+					<option value="centimeter">Centimeter</option>
+					<option value="inches">Inches</option>
+					<option value="feet">Feet</option>
+					<option value="yards">Yards</option>
+		  
+				  </select>
+				</td>
+			</tr>
+
+<br>
+			<button type="submit">Calculate</button>
+			<button id="clearButton">Clear</button>
+
+		</form>
+
+		<div id="results">
+			<p>Total Square Footage: <span id="total-sqft"></span></p>
+		</div>
+	</div>
+
+	<br>
+	<div>
+		<a href="materialCalculator.html">Click here for Material Calculator</a>
+	</div>
+	<br>
+	<div>
+		<a href="materialCalculatorPlot.html">Click here for Material Plot Calculator</a>
+	</div>
+	<br>
+	<div>
+		<a href="materialCalculatorVolume.html">Click here for Material Landscape Calculator</a>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
