@@ -8,14 +8,32 @@
 	<div class="container">
 		<h1>Sod Calculator</h1>
 		<form id="sod-form">
-			<!-- <label for="length">Length (ft)</label>
+			<label for="length">Length</label>
 			<input type="number" id="length" required>
-			<label for="width">Width (ft)</label>
-			<input type="number" id="width" required> -->
+			<select id="length-type">
+				<option value="meters">Metres</option>
+				<option value="centimeter">Centimeter</option>
+				<option value="inches">Inches</option>
+				<option value="feet">Feet</option>
+				<option value="yards">Yards</option>
+	  
+			  </select>
+			  <br>
+			<label for="width">Width</label>
+			<input type="number" id="width" required>
+			<select id="width-type">
+				<option value="meters">Metres</option>
+				<option value="centimeter">Centimeter</option>
+				<option value="inches">Inches</option>
+				<option value="feet">Feet</option>
+				<option value="yards">Yards</option>
+	  
+			  </select>
+			
 
-			<tr>
+			<!-- <tr>
 				<td>Length</td>
-				<td><input type="text" id="length" /></td>
+				<td><input type="number" id="length" /></td>
 				<td>
 				  <select id="length-type">
 					<option value="meters">Metres</option>
@@ -31,7 +49,7 @@
 
 			<tr>
 				<td>Width</td>
-				<td><input type="text" id="width" /></td>
+				<td><input type="number" id="width" /></td>
 				<td>
 				  <select id="width-type">
 					<option value="meters">Metres</option>
@@ -42,7 +60,7 @@
 		  
 				  </select>
 				</td>
-			</tr>
+			</tr> -->
 
 <br>
 			<button type="submit">Calculate</button>
@@ -68,6 +86,6 @@
 		<a href="materialCalculatorVolume.html">Click here for Material Landscape Calculator</a>
 	</div>
 
-	<script src="script.js"></script>
+	<script src="Sod Calculator.js"></script>
 </body>
 </html>
