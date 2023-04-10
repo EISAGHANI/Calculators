@@ -8,30 +8,60 @@ form.addEventListener("submit", (e) => {
 	// Get input values
 	const length = parseFloat(document.getElementById("length").value);
 	const width = parseFloat(document.getElementById("width").value);
-	var widthMeasurement = document.getElementById("width-type")
-  // checks to see which measurement is selected and converts it into metres 
-  	if (widthMeasurement = "Centimeters") {
-    	var widthInMetres = width / 100
- 	 } else if (widthMeasurement = "inches") {
-    	var widthInMetres = width * 39.37
- 	 } else if (widthMeasurement = "feet") {
-   	 	var widthInMetres = width * 3.28084
-  	} else if (widthMeasurement = "yards") {
-    	var widthInMetres = width * 1.09361
-  	} else if (widthMeasurement = "metres") {
-    	var widthInMetres = width
-  	}
+	const lengthMeasurement = document.getElementById("length-type").value;
+	// Convert width to meters
+	let lengthInMetres = length;
+	switch (lengthMeasurement) {
+		case "meters":
+			lengthInMetres *= 3.28084;;
+			break;
+		case "centimeter":
+			lengthInMetres *= 0.0328084;
+			break;
+		case "inches":
+			lengthInMetres *= 0.0833333;
+			break;
+		case "feet":
+			lengthInMetres;
+			break;
+		case "yards":
+			lengthInMetres *= 3;
+			break;
+	}
+	const widthMeasurement = document.getElementById("width-type").value;
+	// Convert width to meters
+	let widthInMetres = width;
+	switch (widthMeasurement) {
+		case "meters":
+			widthInMetres *= 3.28084;
+			break;
+		case "centimeter":
+			widthInMetres *= 0.0328084;
+			break;
+		case "inches":
+			widthInMetres *= 0.0833333;
+			break;
+		case "feet":
+			widthInMetres;
+			break;
+		case "yards":
+			widthInMetres *= 3;
+			break;
+	}
 
-
-	// Calculate total square footage and rolls needed
-	const totalSqft = length * widthInMetres;
-
+	// Calculate total square footage
+	const result = lengthInMetres * widthInMetres
+	const totalSqft = result.toFixed(2);
 
 	// Output results
 	totalSqftOutput.textContent = totalSqft;
 	resultsContainer.style.display = "block";
 });
+
 const clearButton = document.getElementById("clearButton");
+
 clearButton.addEventListener("click", clear);
 
-  
+function clear() {
+	document.location.reload();
+}

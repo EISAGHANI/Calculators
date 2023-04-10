@@ -11,65 +11,30 @@
 			<label for="length">Length</label>
 			<input type="number" id="length" required>
 			<select id="length-type">
+				<option value="feet">Feet</option>
 				<option value="meters">Metres</option>
 				<option value="centimeter">Centimeter</option>
 				<option value="inches">Inches</option>
-				<option value="feet">Feet</option>
 				<option value="yards">Yards</option>
-	  
-			  </select>
-			  <br>
+			</select>
+			 <br>
 			<label for="width">Width</label>
 			<input type="number" id="width" required>
 			<select id="width-type">
+				<option value="feet">Feet</option>
 				<option value="meters">Metres</option>
 				<option value="centimeter">Centimeter</option>
 				<option value="inches">Inches</option>
-				<option value="feet">Feet</option>
 				<option value="yards">Yards</option>
-	  
-			  </select>
-			
-
-			<!-- <tr>
-				<td>Length</td>
-				<td><input type="number" id="length" /></td>
-				<td>
-				  <select id="length-type">
-					<option value="meters">Metres</option>
-					<option value="centimeter">Centimeter</option>
-					<option value="inches">Inches</option>
-					<option value="feet">Feet</option>
-					<option value="yards">Yards</option>
-		  
-				  </select>
-				</td>
-			  </tr>
-<br> 
-
-			<tr>
-				<td>Width</td>
-				<td><input type="number" id="width" /></td>
-				<td>
-				  <select id="width-type">
-					<option value="meters">Metres</option>
-					<option value="centimeter">Centimeter</option>
-					<option value="inches">Inches</option>
-					<option value="feet">Feet</option>
-					<option value="yards">Yards</option>
-		  
-				  </select>
-				</td>
-			</tr> -->
-
-<br>
+			</select>
+			<br>  
 			<button type="submit">Calculate</button>
+			<br>
 			<button id="clearButton">Clear</button>
 
 		</form>
-
 		<div id="results">
-			<p>Total Square Footage: <span id="total-sqft"></span></p>
+			<p>You need <span id="total-sqft"></span> sq. ft.:</p>
 		</div>
 	</div>
 

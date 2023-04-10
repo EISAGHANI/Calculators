@@ -42,6 +42,7 @@ button[type="submit"]:hover {
 }
 
 #results {
+	color: red;
 	display: none;
 	margin-top: 50px;
 }
