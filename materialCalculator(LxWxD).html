@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sod Calculator</title>
+	<title>Landscape Calculator</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<div class="container">
-		<h1>Sod Calculator</h1>
+		<h1>Landscape Calculator</h1>
 		<form id="sod-form">
 			<label for="length">Length</label>
 			<input type="number" id="length" required>
 			<select id="length-type">
 				<option value="feet">Feet</option>
 				<option value="meters">Metres</option>
-				<option value="centimeter">Centimeter</option>
 				<option value="inches">Inches</option>
-				<option value="yards">Yards</option>
 			</select>
 			 <br>
 			 <br>
@@ -24,34 +22,44 @@
 			<select id="width-type">
 				<option value="feet">Feet</option>
 				<option value="meters">Metres</option>
-				<option value="centimeter">Centimeter</option>
 				<option value="inches">Inches</option>
-				<option value="yards">Yards</option>
 			</select>
 			<br>  
 			<br>
+            <label for="depth">Depth</label>
+			<input type="number" id="depth" required>
+			<select id="depth-type">
+				<option value="feet">Feet</option>
+				<option value="meters">Metres</option>
+				<option value="inches">Inches</option>
+			</select>
+			<br>  
+			<br>
+
+
+
 			<button type="submit">Calculate</button>
 			<button id="clearButton">Clear</button>
-
 		</form>
+
 		<div id="results">
-			<p>You need: <span id="total-sqft"></span><span id="diff-color">  sq. ft. of Sod</span></p>
+			<p>You need: <span id="total-sqft"></span>  Cubic Yard(s) (yd<sup>3</sup>)</p>
 		</div>
 	</div>
 
-	<br>
-	<div>
-		<a href="materialCalculator(Area).html">Click here for Material Calculator (Area)</a>
+
+    <br>
+    <div>
+		<a href="Sod Calculator.html">Click here for Sod Calculator</a>
 	</div>
-	<br>
+    <br>
+    <div>
+		<a href="materialCalculator(Area).html">Click here for Material Calculator</a>
+	</div>  
+    <br>
 	<div>
 		<a href="materialCalculator(PlotPlan).html">Click here for Material Calculator (Plot Plan)</a>
-	</div>
-	<br>
-	<div>
-		<a href="materialCalculator(LxWxD).html">Click here for Material Calculator (LxWxD)</a>
-	</div>
-
-	<script src="Sod Calculator.js"></script>
+	</div> 
+	<script src="materialCalculator(LxWxD).js"></script>
 </body>
 </html>
