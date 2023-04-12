@@ -14,20 +14,12 @@ form.addEventListener("submit", (e) => {
 	let lengthInMetres = area;
 	switch (lengthMeasurement) {
 		case "meters":
-			lengthInMetres *= 3.28084;;
-			break;
-		case "centimeter":
-			lengthInMetres *= 0.0328084;
-			break;
-		case "inches":
-			lengthInMetres *= 0.0833333;
+			lengthInMetres *= 10.76;;
 			break;
 		case "feet":
 			lengthInMetres;
 			break;
-		case "yards":
-			lengthInMetres *= 3;
-			break;
+
 	}
 	const widthMeasurement = document.getElementById("width-type").value;
 	// Convert width to meters

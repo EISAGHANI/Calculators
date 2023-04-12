@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Sod Calculator</title>
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 	<div class="container">
 		<h1>Calculate Area from Plot Plan</h1>
 		<form id="sod-form">
 			<label for="area">Lot Area</label>
-			<input type="number" id="area" required>
+			<input type="text" id="area" required>
 			<select id="lot-area-type">
 				<option value="feet">sq.ft.</option>
 				<option value="meters">sq.m.</option>
@@ -18,7 +20,7 @@
 			<br>
 			<br>
 			<label for="housearea">House Area</label>
-			<input type="number" id="housearea" required>
+			<input type="text" id="housearea" required>
 			<select id="house-area-type">
 				<option value="feet">sq.ft.</option>
 				<option value="meters">sq.m.</option>
@@ -26,8 +28,8 @@
 			</select>
 			<br>
 			<br>
-            <label for="deriveawayarea">Drive Away Area</label>
-			<input type="number" id="driveawayarea" required>
+			<label for="deriveawayarea">Drive Away Area</label>
+			<input type="text" id="driveawayarea" required>
 			<select id="drive-away-area-type">
 				<option value="feet">sq.ft.</option>
 				<option value="meters">sq.m.</option>
@@ -35,8 +37,8 @@
 			</select>
 			<br>
 			<br>
-            <label for="deckarea">Deck Area</label>
-			<input type="number" id="deckarea" required>
+			<label for="deckarea">Deck Area</label>
+			<input type="text" id="deckarea" required>
 			<select id="deck-area-type">
 				<option value="feet">sq.ft.</option>
 				<option value="meters">sq.m.</option>
@@ -51,24 +53,27 @@
 
 		<div id="results">
 			<p>Total Landscape Area:</p>
-			<ul><li><span id="total-sqft"></span><span id="diff-color">sq. ft.</span></li>
-			<li><span id="total-sqft2"></span><span id="diff-color">  sq. m.</span></li></ul> 
+			<ul>
+				<li><span id="total-sqft"></span><span id="diff-color"> sq. ft.</span></li>
+				<li><span id="total-sqft2"></span><span id="diff-color"> sq. m.</span></li>
+			</ul>
 		</div>
 	</div>
 
-    <br>
-    <div>
+	<br>
+	<div>
 		<a href="Sod Calculator.html">Click here for Sod Calculator</a>
 	</div>
-    <br>
-    <div>
+	<br>
+	<div>
 		<a href="materialCalculator(Area).html">Click here for Material Calculator (Area)</a>
-	</div> 
-    <br>
+	</div>
+	<br>
 	<div>
 		<a href="materialCalculator(LxWxD).html">Click here for Material Calculator (LxWxD)</a>
 	</div>
-  
+
 	<script src="materialCalculator(PlotPlan).js"></script>
 </body>
+
 </html>

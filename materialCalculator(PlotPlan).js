@@ -15,19 +15,10 @@ form.addEventListener("submit", (e) => {
 	let areaInMetres = area;
 	switch (lotAreaMeasurement) {
 		case "meters":
-			areaInMetres *= 3.28084;;
-			break;
-		case "centimeter":
-			areaInMetres *= 0.0328084;
-			break;
-		case "inches":
-			areaInMetres *= 0.0833333;
+			areaInMetres *= 10.76;
 			break;
 		case "feet":
 			areaInMetres;
-			break;
-		case "yards":
-			areaInMetres *= 3;
 			break;
 	}
 
@@ -39,19 +30,10 @@ form.addEventListener("submit", (e) => {
 		let houseAreaInMetres = housearea;
 		switch (houseAreaMeasurement) {
 			case "meters":
-				houseAreaInMetres *= 3.28084;;
-				break;
-			case "centimeter":
-				houseAreaInMetres *= 0.0328084;
-				break;
-			case "inches":
-				houseAreaInMetres *= 0.0833333;
+				houseAreaInMetres *= 10.76;
 				break;
 			case "feet":
 				houseAreaInMetres;
-				break;
-			case "yards":
-				houseAreaInMetres *= 3;
 				break;
 		}
     const driveawayarea = parseFloat(document.getElementById("driveawayarea").value);
@@ -61,20 +43,10 @@ form.addEventListener("submit", (e) => {
 		let driveawayareaInMetres = driveawayarea;
 		switch (driveAwayAreaMeasurement) {
 			case "meters":
-				driveawayareaInMetres *= 3.28084;;
-				break;
-			case "centimeter":
-				driveawayareaInMetres *= 0.0328084;
-				break;
-			case "inches":
-				driveawayareaInMetres *= 0.0833333;
+				driveawayareaInMetres *= 10.76;
 				break;
 			case "feet":
 				driveawayareaInMetres;
-				break;
-			case "yards":
-				driveawayareaInMetres *= 3;
-				break;
 		}
     const deckarea = parseFloat(document.getElementById("deckarea").value);
 		//Units Conversion for deck area
@@ -83,19 +55,10 @@ form.addEventListener("submit", (e) => {
 		let deckareaInMetres = deckarea;
 		switch (deckAreaMeasurement) {
 			case "meters":
-				deckareaInMetres *= 3.28084;
-				break;
-			case "centimeter":
-				deckareaInMetres *= 0.0328084;
-				break;
-			case "inches":
-				deckareaInMetres *= 0.0833333;
+				deckareaInMetres *= 10.76;
 				break;
 			case "feet":
 				deckareaInMetres;
-				break;
-			case "yards":
-				deckareaInMetres *= 3;
 				break;
 		}
 
@@ -104,7 +67,7 @@ form.addEventListener("submit", (e) => {
 	// Calculate total square footage
 	let result = areaInMetres - houseAreaInMetres - driveawayareaInMetres - deckareaInMetres;
 	let totalSqft = result.toFixed(2);
-	let totalSqft2 = result /= 3.28084;
+	let totalSqft2 = result *= 0.092;
 
 // Output results
 totalSqftOutput.textContent = totalSqft;
